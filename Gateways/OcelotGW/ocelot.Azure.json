@@ -1,0 +1,286 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-auth.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "UpstreamPathTemplate": "/login",
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/refresh",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-auth.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "UpstreamPathTemplate": "/refresh",
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/accounts",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-auth.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "UpstreamPathTemplate": "/accounts",
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/accounts/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-auth.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "UpstreamPathTemplate": "/accounts/{everything}",
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/roles",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-auth.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ],
+      "UpstreamPathTemplate": "/roles",
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/roles/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-auth.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "UpstreamPathTemplate": "/roles/{everything}",
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/folders",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-metadata.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "UpstreamPathTemplate": "/folders",
+      "SwaggerKey": "metadata"
+    },
+    {
+      "DownstreamPathTemplate": "/api/folders/{id}/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-metadata.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "PUT",
+        "GET"
+      ],
+      "UpstreamPathTemplate": "/folders/{id}/",
+      "SwaggerKey": "metadata"
+    },
+    {
+      "DownstreamPathTemplate": "/api/folders/{id}/content",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-metadata.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "PUT",
+        "GET"
+      ],
+      "UpstreamPathTemplate": "/folders/{id}/content",
+      "SwaggerKey": "metadata"
+    },
+    {
+      "DownstreamPathTemplate": "/api/folders/{id}/path",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-metadata.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "UpstreamPathTemplate": "/folders/{id}/path",
+      "SwaggerKey": "metadata"
+    },
+    {
+      "DownstreamPathTemplate": "/api/folders/root/content",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-metadata.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "UpstreamPathTemplate": "/folders/root/content",
+      "SwaggerKey": "metadata"
+    },
+    {
+      "DownstreamPathTemplate": "/api/files",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-metadata.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "UpstreamPathTemplate": "/files",
+      "SwaggerKey": "metadata"
+    },
+    {
+      "DownstreamPathTemplate": "/api/files/{id}/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-metadata.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "PUT",
+        "GET"
+      ],
+      "UpstreamPathTemplate": "/files/{id}/",
+      "SwaggerKey": "metadata"
+    },
+    {
+      "DownstreamPathTemplate": "/api/files/{id}/versions",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-content.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "UpstreamPathTemplate": "/files/{id}/versions",
+      "SwaggerKey": "content"
+    },
+    {
+      "DownstreamPathTemplate": "/api/files/{id}/versions/{versionID}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-content.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ],
+      "UpstreamPathTemplate": "/files/{id}/versions/{versionID}",
+      "SwaggerKey": "content"
+    },
+    {
+      "DownstreamPathTemplate": "/api/files/{id}/content",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dms-content.azurewebsites.net",
+          "Port": "80"
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ],
+      "UpstreamPathTemplate": "/files/{id}/content",
+      "SwaggerKey": "content"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "auth",
+      "Config": [
+        {
+          "Name": "Auth API",
+          "Version": "v1",
+          "Url": "http://dms-auth.azurewebsites.net/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "metadata",
+      "Config": [
+        {
+          "Name": "Metadata API",
+          "Version": "v1",
+          "Url": "http://dms-metadata.azurewebsites.net/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "content",
+      "Config": [
+        {
+          "Name": "Content API",
+          "Version": "v1",
+          "Url": "http://dms-content.azurewebsites.net/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://dms-gw.azurewebsites.net"
+  }
+}

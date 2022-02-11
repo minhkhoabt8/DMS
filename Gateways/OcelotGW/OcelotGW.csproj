@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MMLib.SwaggerForOcelot" Version="4.7.0" />
+        <PackageReference Include="Ocelot" Version="17.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="ocelot.Development.json">
+        <DependentUpon>ocelot.json</DependentUpon>
+      </Content>
+      <Content Update="ocelot.Azure.json">
+        <DependentUpon>ocelot.json</DependentUpon>
+      </Content>
+      <Content Update="ocelot.Docker.json">
+        <DependentUpon>ocelot.json</DependentUpon>
+      </Content>
+      <Content Update="appsettings.Development.json">
+        <DependentUpon>appsettings.json</DependentUpon>
+      </Content>
+    </ItemGroup>
+
+</Project>
